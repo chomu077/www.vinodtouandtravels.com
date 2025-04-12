@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vinod Tour & Travels</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f1f1f1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                  url('https://images.unsplash.com/photo-1606761568499-6d7d5094f218') center/cover no-repeat;
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    header h1 {
+      font-size: 3.5em;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2em;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 2em;
+      margin-bottom: 30px;
+      width: 100%;
+    }
+
+    .cards {
+      display: grid;
+      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      flex: 1;
+    }
+
+    .card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h3 {
+      margin: 0 0 10px;
+    }
+
+    .card-content a {
+      color: #007bff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .reviews-container {
+      flex: 1;
+      padding-left: 30px;
+      padding-top: 0;
+    }
+
+    .reviews {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .review-box textarea {
+      width: 100%;
+      height: 80px;
+      padding: 10px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 1em;
+      resize: vertical;
+    }
+
+    .review-box button {
+      margin-top: 10px;
+      padding: 10px 20px;
+      background: #007bff;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .review {
+      margin-bottom: 15px;
+      padding: 10px;
+      border-left: 4px solid #007bff;
+      background: #f9f9f9;
+      border-radius: 6px;
+      position: relative;
+    }
+
+    .reply {
+      margin-left: 20px;
+      margin-top: 5px;
+      font-size: 0.9em;
+      color: #444;
+    }
+
+    .like-button {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background-color: #ff9900;
+      border: none;
+      padding: 5px 10px;
+      cursor: pointer;
+      color: white;
+      border-radius: 5px;
+    }
+
+    footer {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+    }
+
+    footer p {
+      margin: 5px 0;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Vinod Tour & Travels</h1>
+  <p>Trusted Rides & Memorable Journeys</p>
+</header>
+
+<section>
+  <div class="section-title">Our Cars</div>
+  <div class="cards">
+    <div class="card">
+      <img src="https://imgd.aeplcdn.com/1280x720/n/cw/ec/113701/swift-exterior-right-front-three-quarter.jpeg" alt="Swift">
+      <div class="card-content">
+        <h3>Swift</h3>
+        <a href="tel:+918076069722">📞 Book Now</a>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://imgd.aeplcdn.com/1280x720/n/cw/ec/139261/dzire-exterior-right-front-three-quarter-4.jpeg" alt="Sedan Dzire">
+      <div class="card-content">
+        <h3>Sedan Dzire</h3>
+        <a href="tel:+918076069722">📞 Book Now</a>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://5.imimg.com/data5/SELLER/Default/2021/12/KO/SR/FS/139029321/tata-winger-tempo-traveller-500x500.jpg" alt="Tempo">
+      <div class="card-content">
+        <h3>Tempo Traveller</h3>
+        <a href="tel:+918076069722">📞 Book Now</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="section-title">Popular Destinations</div>
+  <div class="cards">
+    <div class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Hawa_Mahal_2011.jpg" alt="Hawa Mahal">
+      <div class="card-content">
+        <h3>Hawa Mahal</h3>
+        <a href="tel:+918076069722">📞 Book Now</a>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/d/da/Taj-Mahal.jpg" alt="Taj Mahal">
+      <div class="card-content">
+        <h3>Taj Mahal</h3>
+        <a href="tel:+918076069722">📞 Book Now</a>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/f/fd/Golden_Temple%2C_Amritsar.jpg" alt="Golden Temple">
+      <div class="card-content">
+        <h3>Golden Temple</h3>
+        <a href="tel:+918076069722">📞 Book Now</a>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Haridwar_Ghat.jpg" alt="Haridwar">
+      <div class="card-content">
+        <h3>Haridwar</h3>
+        <a href="tel:+918076069722">📞 Book Now</a>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/e/e5/Laxman_Jhula_-_Rishikesh.jpg" alt="Rishikesh">
+      <div class="card-content">
+        <h3>Rishikesh</h3>
+        <a href="tel:+918076069722">📞 Book Now</a>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Qutub_Minar.jpg" alt="Qutub Minar">
+      <div class="card-content">
+        <h3>Qutub Minar</h3>
+        <a href="tel:+918076069722">📞 Book Now</a>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/c/c5/Humayun%27s_Tomb_Delhi.jpg" alt="Humayun's Tomb">
+      <div class="card-content">
+        <h3>Humayun's Tomb</h3>
+        <a href="tel:+918076069722">📞 Book Now</a>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/2/20/Akshardham_New_Delhi.jpg" alt="Akshardham">
+      <div class="card-content">
+        <h3>Akshardham</h3>
+        <a href="tel:+918076069722">📞 Book Now</a>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/2/29/Amber_Fort_2016.jpg" alt="Amer Fort">
+      <div class="card-content">
+        <h3>Amer Fort</h3>
+        <a href="tel:+918076069722">📞 Book Now</a>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/Jantar_Mantar_Jaipur_2011.jpg" alt="Jantar Mantar">
+      <div class="card-content">
+        <h3>Jantar Mantar</h3>
+        <a href="tel:+918076069722">📞 Book Now</a>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/e/e3/Jaisalmer_fort_2.jpg" alt="Jaisalmer Fort">
+      <div class="card-content">
+        <h3>Delhi to Rajasthan</h3>
+        <a href="tel:+918076069722">📞 Book Now</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="reviews-container">
+  <div class="reviews">
+    <h3>📝 Customer Reviews</h3>
+    <div id="review-list"></div>
+    <div class="review-box">
+      <textarea id="review-input" placeholder="Write your review here... 😍🚗✨"></textarea>
+      <button onclick="addReview()">Post Review</button>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p><strong>Contact Us:</strong></p>
+  <p>📞 +91 8076069722 / +91 9045511378</p>
+  <p>✉️ vndkmr733@gmail.com</p>
+  <p>© 2025 Vinod Tour & Travels. All rights reserved.</p>
+</footer>
+
+<script>
+  function addReview() {
+    const input = document.getElementById('review-input');
+    const text = input.value.trim();
+    if (text !== '') {
+      const reviewList = document.getElementById('review-list');
+      const review = document.createElement('div');
+      review.className = 'review';
+      review.textContent = text;
+      reviewList.appendChild(review);
+      input.value = ''; // Clear the input field
+    }
+  }
+</script>
+
+</body>
+</html>
+
